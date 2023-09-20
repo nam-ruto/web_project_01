@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    height: 1500px;
+    height: 5000px;
 }
 
 :root {
@@ -33,7 +33,7 @@ a {
     display: inline-block;
     padding: 18px 16px;
     min-width: 98px;
-    border-radius: 8px;
+    border-radius: 12px;
     background: var(--primary-color);
     color: #fff;
     text-align: center;
@@ -92,6 +92,7 @@ a {
 .navbar .action .btn-sign-up {
     padding: 13px 16px;
     margin-left: 18px;
+    border-radius: 8px;
 }
 
 /* Hero */
@@ -99,7 +100,7 @@ a {
     display: flex;
 }
 
-.info {
+.hero .info {
     margin-right: auto;
     margin-top: 130px;
     width: 51%;
@@ -168,4 +169,174 @@ a {
 }
 
 /* ============= II: CLIENTS ============= */
+.guides {
+    margin-top: 150px;
+}
 
+.guides .sub-title {
+    position: relative;
+    color: #000339;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 35px; /* 100% */
+}
+
+.guides .sub-title::before {
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    left: 50%;
+    content: "";
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+    transform: translateX(-50%);
+}
+
+.guides .desc {
+    width: 459px;
+    max-width: 100%;
+    margin: 20px auto 0px;
+    color: #5a6473;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+/* Guide lists */
+.guide-list {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+.guide-item {
+    text-align: center;
+    margin: 0px 70px;
+}
+
+.guide-list h3 {
+    margin-top: 26px;
+    color: #3b3c45;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px; /* 110% */
+}
+
+.link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0689ff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+}
+/* Guidelines button */
+.guide-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.guidelines-btn {
+    min-width: 170px;
+}
+/* Features */
+.features {
+    margin-top: 120px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-color: var(--main-back-ground);
+}
+
+.features .sub-title {
+    color: #000339;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 35px; /* 100% */
+}
+
+.row-features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: baseline;
+}
+
+.row-features .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5a6473;
+}
+
+.features .link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #0689ff;
+}
+
+.arrow {
+    margin-left: 8px;
+}
+/* Features-List */
+.features .list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list .item {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.thumb {
+    width: 350px;
+    height: 227px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.body {
+    padding: 17px 38px 24px 20px;
+}
+
+.body .title {
+    color: #000339;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px; /* 100% */
+}
+
+.body .desc {
+    margin-top: 11px;
+    color: #a3a6ab;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.body .info {
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+}
+
+.body .label {
+    margin: 3px 19px 0px 6px;
+    color: #4d4d52;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px; /* 100% */
+    letter-spacing: 0.14px;
+}
+
+.body .label:last-child {
+    margin-right: 0px;
+}
