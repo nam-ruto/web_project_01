@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    height: 1500px;
+}
+
+:root {
+    --primary-color: #0f1b4c;
+    --main-back-ground: #e6f0ff;
+}
+
+/* Common features */
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 16px;
+    min-width: 98px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ============= I: HEADER ============= */
+/* Header */
+.header {
+    background-color: var(--main-back-ground);
+    height: 100vh;
+}
+/* Navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar .menu {
+    display: flex;
+    margin-left: 50px;
+    /* align-self: center; */
+}
+
+.navbar .menu li a {
+    color: #4f5361;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    padding: 8px 14px;
+}
+
+.navbar .menu li:hover a {
+    text-decoration: underline;
+}
+
+/* Navigation - Action */
+.navbar .action {
+    margin-left: auto;
+}
+
+.navbar .action .sign-in {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.navbar .action .btn-sign-up {
+    padding: 13px 16px;
+    margin-left: 18px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+}
+
+.info {
+    margin-right: auto;
+    margin-top: 130px;
+    width: 51%;
+}
+
+.hero .sub-title {
+    color: #687690;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.18px;
+    margin-bottom: 8px;
+}
+
+.hero .title {
+    color: #000336;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 76px; /* 118.75% */
+    margin-bottom: 30px;
+}
+
+.hero .desc {
+    color: #5a6473;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    margin-bottom: 10px;
+}
+
+.hero-cta {
+    min-width: 170px;
+}
+
+.hero img {
+    margin-left: auto;
+    height: 500px;
+}
+
+/* ============= II: CLIENTS ============= */
+/* Ratings */
+.clients {
+    margin-top: 122px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-desc {
+    margin-top: 23px;
+}
+
+.row .desc {
+    color: #7d8589;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+}
+/* Brands */
+.brands {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ============= II: CLIENTS ============= */
+
