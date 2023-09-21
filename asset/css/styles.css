@@ -143,10 +143,15 @@ a {
 /* ============= II: CLIENTS ============= */
 /* Ratings */
 .clients {
-    margin-top: 122px;
+    margin-top: 80px;
 }
 
-.row {
+.clients .content {
+    padding-top: 43px;
+    padding-bottom: 41px;
+}
+
+.clients .row {
     display: flex;
     justify-content: space-between;
 }
@@ -155,7 +160,7 @@ a {
     margin-top: 23px;
 }
 
-.row .desc {
+.clients .row .desc {
     color: #7d8589;
     font-size: 16px;
     font-weight: 500;
@@ -168,9 +173,14 @@ a {
     justify-content: space-between;
 }
 
-/* ============= II: CLIENTS ============= */
+/* ============= III: GUIDES ============= */
 .guides {
-    margin-top: 150px;
+    margin-top: 40px;
+}
+
+.guides .content {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .guides .sub-title {
@@ -245,7 +255,7 @@ a {
 }
 /* Features */
 .features {
-    margin-top: 120px;
+    margin-top: 40px;
     padding-top: 110px;
     padding-bottom: 110px;
     background-color: var(--main-back-ground);
@@ -306,7 +316,7 @@ a {
     padding: 17px 38px 24px 20px;
 }
 
-.body .title {
+.body .title a {
     color: #000339;
     font-size: 20px;
     font-weight: 600;
@@ -339,4 +349,111 @@ a {
 
 .body .label:last-child {
     margin-right: 0px;
+}
+
+/* Stats */
+.stats {
+    margin-top: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.stats .content {
+    width: 1017px;
+}
+
+.stats .row {
+    display: flex;
+}
+
+.img-block {
+    position: relative;
+}
+
+.img-block,
+.stats .info {
+    width: 50%;
+}
+
+.img-block .stats-img {
+    display: block;
+    margin-left: auto;
+    width: 400px;
+    height: 460px;
+    border-radius: 12px;
+}
+
+.stats .img-block .stats-trend {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 237px;
+    padding: 45px 22px 40px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #fff;
+}
+
+.stats .img-block .stats-trend strong {
+    color: #000339;
+    width: 159px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px; /* 100% */
+    letter-spacing: 0.26px;
+}
+
+.stats .img-block .stats-trend .row img {
+    margin-left: 10px;
+}
+
+.stats .stats-trend .desc {
+    margin-top: 8px;
+    width: 194px;
+    color: #a7a7a7;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
+
+.separate {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 193.62px;
+    height: 1.2px;
+    background: #E9E9E9;
+}
+
+.stats .info {
+    padding-left: 165px;
+    padding-top: 80px;
+}
+
+.stats .info .sub-title {
+    position: relative;
+    width: 270px;
+    color: #000339;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px; /* 128.571% */
+}
+
+.stats .info .sub-title::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    display: block;
+    content: "";
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.stats .info .desc {
+    margin-top: 20px;
+    width: 309px;
+    color: #5a6473;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
 }
