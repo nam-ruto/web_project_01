@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bensik</title>
+        <script
+            defer
+            src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+        ></script>
         <link rel="stylesheet" href="./asset/css/reset.css" />
         <link rel="stylesheet" href="./asset/fonts/stylesheet.css" />
         <link rel="stylesheet" href="./asset/css/styles.css" />
@@ -455,15 +459,29 @@
                             You’ll find your next home, in any style you prefer.
                         </div>
                         <div class="icon-block">
-                            <img src="./asset/img/social-icon.svg" alt="">
+                            <img src="./asset/img/social-icon.svg" alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="row row-copyrights">
-                    <img src="./asset/img/Logo.svg" alt="">
-                    <p class="copyrights">Copyright 2020.com, All rights reserved.</p>
+                    <img src="./asset/img/Logo.svg" alt="" />
+                    <p class="copyrights">
+                        Copyright 2020.com, All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
+        <!-- Script - Netlify -->
+        <script>
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", (user) => {
+                    if (!user) {
+                        window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                        });
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
